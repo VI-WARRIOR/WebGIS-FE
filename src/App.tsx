@@ -1,7 +1,16 @@
+import {
+  BrowserRouter,
+  Link,
+  Outlet,
+  Route,
+  Router,
+  Routes,
+} from "react-router-dom";
 import "./App.css";
 import { Home } from "./App/Home";
 import { FooterHomePage } from "./compoments/footer";
 import { Header } from "./compoments/header/header";
+import ErrorPage from "./error-page";
 
 function App() {
   return (
@@ -10,7 +19,7 @@ function App() {
         <Header />
       </header>
       <body>
-        <Home />
+        <Outlet />
       </body>
       <footer>
         <FooterHomePage />
@@ -18,5 +27,15 @@ function App() {
     </div>
   );
 }
+// function App() {
+//   return (
+//     <BrowserRouter future={{ v7_startTransition: true }}>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/*" errorElement={<ErrorPage />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
 
 export default App;

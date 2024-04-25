@@ -21,9 +21,7 @@ function App() {
       <body>
         <Outlet />
       </body>
-      <footer>
-        <FooterHomePage />
-      </footer>
+      <footer></footer>
     </div>
   );
 }

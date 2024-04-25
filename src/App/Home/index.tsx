@@ -20,7 +20,7 @@ export const Home = () => {
           <h3 className="text-white">Phòng nổi bật </h3>
         </div>
       </div>
-      <div className="container mx-auto mt-8 flex flex-wrap">
+      {/* <div className="container mx-auto mt-8 flex flex-wrap">
         {letContainer.map((item) => {
           return <Card />;
         })}
@@ -34,7 +34,7 @@ export const Home = () => {
         {letContainer.map((item) => {
           return <CardFiveStar />;
         })}
-      </div>
+      </div> */}
     </>
   );
 };

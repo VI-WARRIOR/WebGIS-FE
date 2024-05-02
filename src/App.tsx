@@ -7,7 +7,6 @@ import {
   Routes,
 } from "react-router-dom";
 import "./App.css";
-import { Home } from "./App/Home";
 import { FooterHomePage } from "./compoments/footer";
 import { Header } from "./compoments/header/header";
 import ErrorPage from "./error-page";
@@ -21,7 +20,9 @@ function App() {
       <body>
         <Outlet />
       </body>
-      <footer></footer>
+      <footer>
+        <FooterHomePage />
+      </footer>
     </div>
   );
 }

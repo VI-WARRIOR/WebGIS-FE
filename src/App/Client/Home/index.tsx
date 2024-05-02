@@ -1,9 +1,9 @@
-import { Card } from "../../compoments/card";
-import { CardFiveStar } from "../../compoments/card/index.five-star";
-import { CarouselRoot } from "../../compoments/carousel";
-import { CarouselSlitElement } from "../../compoments/carousel/index.v2";
-import { InputSearch } from "../../compoments/input-search";
-import { TextSlogan } from "../../compoments/text-slogan";
+import { Card } from "../../../compoments/card";
+import { CardFiveStar } from "../../../compoments/card/index.five-star";
+import { CarouselRoot } from "../../../compoments/carousel";
+import { CarouselSlitElement } from "../../../compoments/carousel/index.v2";
+import { InputSearch } from "../../../compoments/input-search";
+import { TextSlogan } from "../../../compoments/text-slogan";
 
 export const Home = () => {
   const letContainer = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -20,7 +20,7 @@ export const Home = () => {
           <h3 className="text-white">Phòng nổi bật </h3>
         </div>
       </div>
-      {/* <div className="container mx-auto mt-8 flex flex-wrap">
+      <div className="container mx-auto mt-8 flex flex-wrap">
         {letContainer.map((item) => {
           return <Card />;
         })}
@@ -34,7 +34,7 @@ export const Home = () => {
         {letContainer.map((item) => {
           return <CardFiveStar />;
         })}
-      </div> */}
+      </div>
     </>
   );
 };
